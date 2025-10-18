@@ -1,0 +1,13 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm i
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    files:
+      - "**/*"
+    baseDirectory: ./build
