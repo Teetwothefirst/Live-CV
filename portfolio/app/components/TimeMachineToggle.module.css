@@ -1,0 +1,35 @@
+.toggleBtn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background-color: var(--background);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 6px -1px color-mix(in srgb, var(--foreground) 5%, transparent);
+}
+
+.toggleBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px color-mix(in srgb, var(--foreground) 10%, transparent);
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .text {
+    display: none;
+  }
+  .toggleBtn {
+    padding: 0.5rem;
+  }
+}
